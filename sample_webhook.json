@@ -1,0 +1,46 @@
+{
+  "webhook_type": "NEW_SESSION_WEBHOOK",
+  "is_new_session": true,
+  "payload": {
+    "from": {
+      "id": 90001234,
+      "id_str": "90001234",
+      "name": "Aisyah Rahman",
+      "email": "60123456781",
+      "avatar_url": "https://example.com/avatar/default.png"
+    },
+    "message": {
+      "id": 550001001,
+      "id_str": "550001001",
+      "type": "text",
+      "text": "Hi, is the new SUV available for a test drive this weekend?",
+      "payload": {},
+      "timestamp": "2026-10-01T03:15:42Z"
+    },
+    "room": {
+      "id": 70004321,
+      "id_str": "70004321",
+      "name": "Aisyah Rahman",
+      "type": "group",
+      "options": "{\"channel\":\"wa\",\"source\":\"wa\"}",
+      "participants": [
+        {
+          "email": "60123456781"
+        },
+        {
+          "email": "autosmart_admin@example.com"
+        }
+      ]
+    }
+  },
+  "room_log": {
+    "room_id": "70004321",
+    "channel_id": 101,
+    "source": "wa",
+    "name": "Aisyah Rahman",
+    "user_id": "60123456781",
+    "resolved": false,
+    "is_waiting": true,
+    "created_at": "2026-10-01T03:15:42Z"
+  }
+}
