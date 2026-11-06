@@ -64,6 +64,7 @@ curl -X POST http://127.0.0.1:8000/webhooks/qiscus -H "Content-Type: application
 | `tests/` | Unit tests for phones and mapping, and integration tests against an in-test fake CRM |
 | `tools/load_test.py` | Rough load test: many webhooks at once, measures the reply time to Qiscus |
 | `try_crm.py` | Pokes the mock CRM by hand to see each behaviour |
+| `CLIENT_GUIDE.md` | One-page guide for AutoSmart's IT team (B3) |
 
 ## 3. How it works
 
@@ -159,7 +160,7 @@ The mock CRM can also be told to misbehave per request with the header `X-Mock-S
 
 - **B1, retry and dead-letter: done.** Retries for 5xx, 429 and connection failures with backoff and `Retry-After`. Events that still fail are kept as `failed` and resent with `/admin/replay`. I chose it because without it, a CRM outage would mean lost leads, which is the exact problem AutoSmart came with.
 - **B2, docker compose: skipped.** I'm not yet at the level where I could explain and support a Docker setup properly, and I'd rather submit something I can explain line by line. The setup above takes about five minutes.
-- **B3, client integration guide:** see `CLIENT_GUIDE.md`.
+- **B3, client integration guide: done**, see `CLIENT_GUIDE.md`. I chose it because explaining the integration to the client's IT team, what they need to provide and how to troubleshoot it, is the part of this work a TAM owns day to day.
 
 ## 9. How I used AI
 
