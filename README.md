@@ -159,7 +159,7 @@ The mock CRM can also be told to misbehave per request with the header `X-Mock-S
 ## 8. Bonus tasks
 
 - **B1, retry and dead-letter: done.** Retries for 5xx, 429 and connection failures with backoff and `Retry-After`. Events that still fail are kept as `failed` and resent with `/admin/replay`. I chose it because without it, a CRM outage would mean lost leads, which is the exact problem AutoSmart came with.
-- **B2, docker compose: skipped.** I'm not yet at the level where I could explain and support a Docker setup properly, and I'd rather submit something I can explain line by line. The setup above takes about five minutes.
+- **B2, docker compose: not done.** I ran out of time to build and test it properly, so I put my time into the required parts first, and without Docker the setup above still takes only a few minutes from a fresh clone.
 - **B3, client integration guide: done**, see `CLIENT_GUIDE.md`. I chose it because explaining the integration to the client's IT team, what they need to provide and how to troubleshoot it, is the part of this work a TAM owns day to day.
 
 ## 9. How I used AI
