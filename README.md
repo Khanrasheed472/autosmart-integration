@@ -164,7 +164,7 @@ The mock CRM can also be told to misbehave per request with the header `X-Mock-S
 
 ## 9. How I used AI
 
-**Tools.** Claude, through the Claude desktop app connected to my project folder and GitHub. I used it to explain concepts I was new to (webhooks, status codes, idempotency, E.164), plan the work across the five days, draft and test the code file by file, and draft this README. I ran every test and the demo on my own machine, reviewed each piece, and made the design decisions above.
+**Tools.** I used Claude, through the Claude desktop app connected to my project folder and GitHub. Given the five-day window and my other work commitments running alongside it, I relied on AI, both to brush up on and understand the technical concepts this assessment needed, such as webhooks, HTTP status codes, idempotency and E.164 phone formats, and to plan the work, draft and test the code file by file, and draft this README. I ran every test and the demo on my own machine, reviewed each piece, and made the design decisions above.
 
 **Prompts that helped most** (as I wrote them):
 
